@@ -240,6 +240,11 @@ body{
     background: var(--color2) !important;
 }
 
+.contact-btn .btn:hover {
+    color: #FFFFFF !important;
+    background: var(--color2) !important;
+}
+
 
 /*** Header ***/
 .hero-header .breadcrumb-item+.breadcrumb-item::before {
