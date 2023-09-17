@@ -781,3 +781,31 @@ body{
     justify-content: center;
     margin-bottom: 1rem;
   }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vh;
+    margin-inline: auto;
+    max-width: 40rem;
+    /* background: #141414; */
+    padding: 1vh;
+}
+
+ .gallery > img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.gallery:has(img:hover) img:not(:hover) {
+    scale: 0.8;
+    opacity: 0.5;
+    filter: grayscale(70%);
+}
+
+.gallery > img:hover{
+    scale: 1.5;
+    z-index:9999;
+}
