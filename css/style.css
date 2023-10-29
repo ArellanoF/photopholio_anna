@@ -205,6 +205,14 @@ body{
     .row {
     --bs-gutter-x: 0rem;
     }
+    .img-fluid-newborn {
+        width: 80% !important;
+    }
+    .new-born-one{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
 }
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
@@ -808,4 +816,10 @@ body{
 .gallery > img:hover{
     scale: 1.5;
     z-index:9999;
+}
+
+.img-fluid-newborn{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
 }
