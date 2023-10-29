@@ -213,6 +213,11 @@ body{
         align-items: center;
         display: flex;
     }
+
+    .py-5{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
 }
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
@@ -814,7 +819,7 @@ body{
 }
 
 .gallery > img:hover{
-    scale: 1.5;
+    scale: 1.4;
     z-index:9999;
 }
 
@@ -822,4 +827,10 @@ body{
     width: 100%;
     height: 25rem;
     object-fit: cover;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--color2) !important;
+    text-decoration: none;
+    background-color: var(--color4) !important;
 }

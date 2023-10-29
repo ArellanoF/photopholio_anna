@@ -86,13 +86,16 @@ $(window).scroll(function() {
     },
   });
   
+  // Cache the mobile-dnone element
+  var mobileDNone = $(".mobile-dnone");
+
   $(window).scroll(function() {
-    var scrollPos = $(this).scrollTop();
-    var elementOffset = $(".mobile-dnone").offset().top;
-    
-    if (scrollPos > elementOffset) {
-      $(".mobile-dnone").removeClass("mobile-dnone");
-    }
+      var scrollPos = $(this).scrollTop();
+      var elementOffset = mobileDNone.offset().top;
+      
+      if (scrollPos > elementOffset) {
+          mobileDNone.removeClass("mobile-dnone");
+      }
   });
   $(".owl-carousel1").owlCarousel({
     loop: true,
