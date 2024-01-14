@@ -79,7 +79,7 @@
           >
           <div
             class="dropdown-menu m-0"
-            style="text-align: center; border-radius: 1rem"
+            style="text-align: center; border-radius: 1rem;box-shadow: 0px 1px 7px 0px rgba(91,15,0,0.75);"
           >
           <a href="events.html#events-familiar" class="dropdown-item color-text-header">
             Familiar</a>
@@ -93,11 +93,6 @@
             Infantiles</a>
           <a href="events.html#events-smash" class="dropdown-item color-text-header">
             Smash</a>
-          <a href="events.html" class="dropdown-item color-text-header">
-            Eventos</a>
-          <a href="events.html" class="dropdown-item color-text-header">
-            Portrait
-          </a>
           </div>
         </div>
         <a href="contact.html" class="nav-item nav-link">Contacto</a>
@@ -138,21 +133,22 @@
             <div class="row g-5 bg-color4 p-3" style="border-radius:0.8rem">
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <p class="mb-4 text-color1 font-family_ibm">Gracias por llegar hasta aquí.  Ahora que ya conoces más de mi, me permites conocerte también?</p>
-                    <form  method="post" action="https://forms.un-static.com/forms/f330178af0393af6cca5da11dfca4e87685b810d">
+                    <form  action="https://formspree.io/f/xleqdlde"
+                    method="POST" i>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input x-ref="content" x-model="content" type="text" id="input_inputField1" name="Name" placeholder="Tu nombre" class="input-form">
+                                    <input x-ref="content" x-model="content" type="text" required id="input_inputField1" name="Name" placeholder="Tu nombre" class="input-form">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input x-ref="content" x-model="content" type="email" id="input_inputField2" name="Email" placeholder="Tu email" class="input-form">
+                                    <input x-ref="content" x-model="content" required type="email" id="input_inputField2" name="Email" placeholder="Tu email" class="input-form">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea x-ref="area" id="input_inputMessage" name="Message" class="input-form" placeholder="Mensaje" style="height: 18rem;
+                                    <textarea x-ref="area" id="input_inputMessage" required name="Message" class="input-form" placeholder="Mensaje" style="height: 18rem;
                                     resize: none;"></textarea>  
                                 </div>
                             </div>
@@ -168,10 +164,10 @@
                     <p class="mb-2">Teléfono:</p>
                     <h4>+34 611 69 87 12</h4>
                     <hr class="w-100">
-                    <p class="mb-2">Mail us:</p>
+                    <p class="mb-2">Email</p>
                     <h4>a.sierrafotografia@gmail.com</h4>
                     <hr class="w-100">
-                    <p class="mb-2">Follow us:</p>
+                    <p class="mb-2">Sígueme</p>
                     <div class="pt-2 d-lg-inline-flex align-items-center d-none contact-btn">
                       <div class="h-100 d-lg-inline-flex align-items-center d-none">
                         <a class="btn btn-square rounded-circle bg-light me-2" target="_blank" href="https://www.facebook.com/a.sierrafotografia"

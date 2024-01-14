@@ -89,4 +89,16 @@ $(document).ready(function () {
       mobileDNone.removeClass("mobile-dnone");
     }
   });
+
+  function reloadPage() {
+    setTimeout(function () {
+      window.location.href = 'index.html';
+    }, 4000);
+  }
+  // Obtener el botón por su ID
+  var buttonSend = document.getElementById("button-send");
+
+  // Agregar un evento al botón para llamar a la función reloadPage al hacer clic
+  buttonSend.addEventListener("click", reloadPage);
+  // Función para recargar la página después de 4 segundos
 });
