@@ -208,6 +208,9 @@ body{
     .img-fluid-newborn {
         width: 80% !important;
     }
+    .img-fluid-bodas {
+        width: 91% !important;
+    }
     .new-born-one{
         justify-content: center;
         align-items: center;
@@ -702,6 +705,11 @@ body{
 .img-fluid-newborn{
     width: 100%;
     height: 25rem;
+    object-fit: cover;
+}
+.img-fluid-bodas{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
