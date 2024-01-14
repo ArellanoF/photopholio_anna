@@ -70,7 +70,7 @@ h6,
 }
 
 body{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 /*** Spinner ***/
@@ -138,6 +138,7 @@ body{
 }
 .navbar{
     background-color: var(--color4);
+    height:5rem;
 }
 
 
@@ -167,6 +168,9 @@ body{
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
+    }
+    .navbar{
+        height: 7.5rem;
     }
 
     .navbar .navbar-nav {
