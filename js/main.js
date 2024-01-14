@@ -89,23 +89,4 @@ $(document).ready(function () {
       mobileDNone.removeClass("mobile-dnone");
     }
   });
-  // Obtener el elemento de la barra de navegación
-  var navbar = document.querySelector(".navbar-collapse");
-
-  // Guardar el estado actual del desplazamiento
-  var isScrollDisabled = false;
-
-  // Agregar un evento de desplazamiento al documento
-  document.addEventListener("scroll", function () {
-    // Verificar si el usuario está sobre la barra de navegación
-    if (window.scrollY > navbar.offsetHeight && !isScrollDisabled) {
-      // Si está encima de la barra de navegación y el desplazamiento no está deshabilitado, deshabilitar el desplazamiento
-      document.body.style.overflow = "hidden";
-      isScrollDisabled = true;
-    } else if (window.scrollY <= navbar.offsetHeight && isScrollDisabled) {
-      // Si no está encima de la barra de navegación y el desplazamiento está deshabilitado, habilitar el desplazamiento
-      document.body.style.overflow = "";
-      isScrollDisabled = false;
-    }
-  });
 });
